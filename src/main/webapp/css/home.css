@@ -1,0 +1,203 @@
+body{
+	min-width: 100%;
+}
+.site-header{
+	overflow: hidden;
+	position: relative;
+	min-height: 296px;
+	border-bottom: 1px solid #ececec;
+	margin-bottom: 60px;
+}
+.site-header nav{
+	position: relative;
+	z-index: 1;
+}
+.site-header h1{
+	z-index: 1;
+	position: relative;
+	margin-top: 40px;
+}
+.site-header h2{
+	z-index: 1;
+	position: relative;
+	margin-top: 40px;
+}
+.site-header canvas{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 0;
+	background-color: rgb(15,26,37);
+}
+.site-header li{
+	list-style: none;
+}
+
+#navContainer{
+	position: absolute;
+	max-width: 100%;
+	z-index: 1;
+}
+#navBar{
+	background-color: rgba(0,0,0,0.02);
+}
+.login{
+	position: absolute;
+	top: 10px;
+	right: 30px;
+	color: white;
+	cursor: pointer;
+}
+.login:hover{
+	text-decoration: none;
+	color: white;
+}
+.logined{
+	width: 140px;
+	/*visibility: hidden;*/
+}
+.navUser:hover{
+	cursor: default;
+}
+
+.navUser{
+	width:40px;
+	height: 40px;
+	border-radius: 20px;
+	overflow:hidden;
+	padding:0 !important;
+}
+.searchDiv{  
+    position: absolute;  
+    top:200px; 
+    overflow: hidden;   
+    border-radius: 10px;  
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    z-index: 1;  
+	height: 52px;
+	padding-top: 11px;
+   	padding-left: 3.8%;
+    box-sizing: border-box;
+}  
+.searchDiv::before {  
+    content: "";  
+    position: absolute;  
+    top: 0px;  
+    left: 0px;  
+    right: 0px;  
+    bottom: 0px;  
+    z-index: -1;   
+    -webkit-filter: blur(20px);  
+    filter: blur(20px);  
+    margin: -30px; 
+    background: rgba(255,255,255,0.4) center top;
+    background-size: cover;   
+    background-attachment: fixed;
+}
+#searchForm{
+	position: absolute;
+}
+#searchInput{
+	height:30px;
+	border:1px solid #dfdfdf;
+	border-radius: 5px;
+	background-color: rgb(245,245,245);
+	padding: 0 30px 0 10px;
+	outline: none;
+	font-size: 14px;
+}
+.submit{
+	position: absolute;
+	top:0;
+	left: 242px;
+	border:0;
+	padding-top: 5px;
+	padding-bottom: 10px;
+	padding-left: 15px;
+	padding-right: 15px;
+	background-color: rgba(255,255,255,0);
+	outline: none;
+	cursor: pointer;
+}
+.searchButton{
+	position: absolute;
+	top: 8px;
+	outline: none;
+	box-shadow: none;
+	cursor: pointer;
+}
+#leftBar{
+	animation-duration: 0.5s;
+}
+#leftBar li{
+	list-style: none;
+	font-size: 12px;
+	line-height: 200%;
+	color: #8f858f;
+	margin: 0;
+	padding: 0;
+}
+#leftBar li:hover{
+	background-color: #00a8e6;
+}
+#leftBar li a:hover{
+	background-color: #00a8e6;
+}
+#gridFilter li a:hover{
+	color: white;
+}
+.bottomBlock{
+	position: absolute;
+	bottom: 25px;
+	display: inline-block;
+	user-select:none;
+	margin-left: 0 !important;
+}
+.bottomBlock .sum{
+	font-size: 12px;
+}
+.toolName{
+	font-size: 16px;
+}
+.toolSize{
+	font-size: 12px;
+	color: rgb(153,153,153);
+}
+.toolBriefIntro{
+	text-indent:2em;
+	margin-bottom: 10px;
+}
+.toolBox{
+	display: inline-block;
+	box-shadow: 1px 1px 1px #e6e6e6;
+	overflow: hidden;
+	background-color: #ffffff;
+	color: rgb(36,41,46);
+	cursor: pointer;
+}
+.toolBox:hover{
+	box-shadow: 5px 10px 5px #e6e6e6;
+	-webkit-filter:saturate(3);
+}
+.tri{
+	height: 20px;
+	overflow: hidden;
+}
+.tri canvas{
+	position: absolute;
+	top: 0;
+}
+.toolLink{
+	text-decoration: none;
+	color:rgb(69,69,69);
+	padding-bottom: 61px;
+}
+.toolLink:hover{
+	text-decoration: none;
+	color:rgb(69,69,69);
+}
+.toolBox h3{
+	margin-bottom: 10px;
+}

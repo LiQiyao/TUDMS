@@ -1,0 +1,530 @@
+html {
+	min-width: 980px !important;
+	overflow-x: scroll !important;
+	overflow-y: scroll !important;
+}
+
+:root {
+	overflow-y: auto !important;
+	overflow-x: auto !important;
+}
+:root body {
+  position: static !important;
+}
+body {
+	font-family: "微软雅黑" !important;
+	min-width: 980px !important;
+}
+
+.details-head {
+	position: relative;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #e1e4e8;
+	padding-top: 80px;
+}
+
+.details-head-t {
+	width: 980px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	height: 28px;
+}
+
+.details-head-t-l {
+	position: relative;
+	float: left;
+	max-width: 635px;
+	padding-left: 18px;
+	font-size: 18px;
+	line-height: 26px;
+	color: #586069;
+}
+
+.icon-star,
+.icon-share {
+	font-size: 14px;
+	color: #333333;
+	cursor: pointer;
+	margin-left: 10px;
+}
+.icon-share {
+	margin-right: 50px;
+}
+.icon-star:hover,
+.icon-share:hover {
+	color: orangered;
+}
+
+#tool-style {
+	font-size: 14px;
+	color: dodgerblue;
+}
+
+#tool-developer {
+	padding-left: 10px;
+	margin-left: 10px;
+	color: gray;
+	font-size: 14px;
+	border-left: 1px solid gray;
+}
+
+#dropSearchForm:before {
+	left: 250px;
+}
+
+.uk-button-group {
+	margin-top: 5px;
+	float: right;
+}
+
+.uk-button-group>.uk-button {
+	margin-right: 5px;
+	border-radius: 5px;
+}
+
+.uk-button:hover .uk-icon-thumbs-o-up {
+	color: red;
+}
+
+.details-head-b {
+	width: 980px;
+	margin: 0 auto;
+}
+
+#comment-num,
+#problem-num {
+	margin-left: 3px;
+}
+
+.uk-tab {
+	border-bottom: 0 !important;
+}
+
+.details-body {
+	width: 980px;
+	margin: 0 auto;
+}
+
+.tool-introduction p {
+	text-indent: 20px;
+	line-height: 25px;
+	font-size: 12px;
+	margin-bottom: 5px !important;
+}
+
+.tool-labels {
+	height: 35px;
+}
+
+.tool-labels ul {
+	padding-left: 0 !important;
+	list-style: none;
+}
+
+.tool-labels ul li {
+	background: #EEEEEE;
+	border-radius: 3px;
+	font-size: 10px;
+	padding: 2px 6px;
+	display: block;
+	float: left;
+	margin-right: 10px;
+}
+
+.uk-icon-cog {
+	float: right;
+	color: gray;
+	font-size: 14px;
+	cursor: pointer;
+}
+
+.tool-versions span {
+	font-family: "微软雅黑";
+	line-height: 30px;
+	margin-right: 5px;
+}
+
+.tool-versions div {
+	padding: 6px 20px 6px 0;
+	height: 32px;
+	border-radius: 3px;
+	margin-top: -5px;
+}
+.version-name {
+	margin-left: 20px;
+}
+#tooldownloadbar{
+	line-height: 30px;
+}
+.tool-new-version:hover {
+	background: lightgoldenrodyellow;
+}
+
+.tool-old-version:hover {
+	background: lightgoldenrodyellow;
+}
+
+.uk-progress {
+	background: white !important;
+}
+
+.tool-versions div a {
+	padding-left: 20px;
+	line-height: 32px;
+	float: right;
+}
+
+#cancel-download {
+	display: block;
+	width: 40px;
+	float: none;
+	margin-left: -20px;
+}
+
+.tool-new-version {
+	position: relative;
+	color: #266E23;
+	border-top: 1px solid #CCE5CB;
+	background: #DEF7DD;
+}
+
+.tool-old-version {
+	position: relative;
+	color: #7A5E10;
+	border-top: 1px solid #E8E8C8;
+	background: lightyellow;
+}
+
+.version-size {
+	position: absolute;
+	left: 20%;
+}
+
+.version-date {
+	position: absolute;
+	left: 70%;
+}
+
+.tool-readme {
+	position: relative;
+	margin-bottom: 30px;
+	border-radius: 3px;
+	margin-top: 20px;
+}
+
+.readme-head {
+	display: block;
+	padding: 9px 10px 10px;
+	margin: 0;
+	font-size: 14px;
+	line-height: 17px;
+	background-color: #f6f8fa;
+	border: 1px solid rgba(27, 31, 35, 0.15);
+	border-bottom: 0;
+	border-radius: 3px 3px 0 0;
+}
+
+.readme-body {
+	padding: 45px;
+	word-wrap: break-word;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+	margin-top: 0 !important;
+}
+
+.readme-version-num {
+	font-size: 16px;
+	font-weight: bloder;
+}
+
+.comment-fillIn,
+.problem-fillIn {
+	height: 160px;
+	border-bottom: 1px solid #d9dde1;
+	padding-bottom: 30px;
+	margin-top: 24px;
+}
+
+.comment-fillIn-l,
+.problem-fillIn-l {
+	display: inline-block;
+	overflow: hidden;
+	margin-left: 24px;
+	margin-right: 20px;
+	float: left;
+}
+
+.comment-fillIn-l img,
+.problem-fillIn-l img {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+
+.comment-fillIn-r,
+.problem-fillIn-r {
+	width: 875px;
+	position: relative;
+	padding: 8px 10px;
+	border: 1px solid #b7bbbf;
+	background-color: #fff;
+	box-sizing: border-box;
+	border-radius: 2px;
+	float: left;
+}
+
+.comment-fillIn-r textarea,
+.problem-fillIn-r textarea {
+	width: 97%;
+	min-height: 62px;
+	padding: 8px;
+	color: #555;
+	resize: none;
+	line-height: 18px;
+	font-size: 14px;
+	font-family: "Microsoft YaHei";
+	border: solid 0px;
+	outline: none;
+}
+
+.num-limit {
+	position: absolute;
+	line-height: 100%;
+	font-size: 12px;
+	right: 5px;
+	bottom: 5px;
+	color: #d0d6d9;
+}
+
+.sublim-comment,
+.sublim-problem {
+	height: 40px;
+	padding: 0 12px;
+	line-height: 40px;
+	text-align: center;
+	color: #fff;
+	cursor: pointer;
+	margin-top: 20px !important;
+	margin-right: 20px !important;
+	border-radius: 2px;
+	float: right;
+}
+
+.comment-list,
+.problem-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	color: #14191e;
+}
+
+.one-comment,
+.one-problem {
+	border-bottom: 1px solid #d9dde1;
+	overflow: hidden;
+	padding: 24px 0 16px 24px;
+}
+
+.one-comment-l,
+.one-problem-l {
+	float: left;
+	width: 40px;
+	margin-right: 10px;
+}
+
+.one-comment-l a,
+.one-problem-l a {
+	text-decoration: none;
+}
+
+.one-comment-l a img,
+.one-problem-l a img {
+	height: 40px;
+	width: 40px;
+	border-radius: 20px;
+}
+
+.one-comment-r,
+.one-problem-r {
+	margin-left: 60px;
+	margin-right: 20px;
+}
+
+.one-comment-r-t,
+.one-problem-r-t {
+	line-height: 1.2;
+	margin-bottom: 8px;
+}
+
+.one-comment-r-t a,
+.one-problem-r-t a {
+	font-size: 14px;
+	color: #4d555d;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.one-comment-r p,
+.one-problem-r p {
+	margin-top: 3px;
+	font-size: 14px;
+	line-height: 24px;
+	color: #303538;
+	word-break: break-all;
+	word-wrap: break-word;
+}
+
+.one-comment-r-b,
+.one-problem-r-b {
+	color: #93999f;
+	font-size: 12px;
+	margin-top: 15px;
+}
+
+.comment-page,
+.problem-page {
+	margin-top: 40px!important;
+}
+
+.problem-type {
+	height: 48px;
+	background-color: #f3f5f7;
+	position: relative;
+}
+
+#problem-typeul {
+	list-style: none;
+}
+
+.problem-type li a {
+	line-height: 26px;
+	color: gray;
+}
+
+.uk-subnav>.uk-active>* {
+	color: black !important;
+}
+
+.problem-list li {
+	padding: 24px 0 16px 24px;
+}
+
+.problem-list {
+	position: static !important;
+	height: auto !important;
+}
+
+.one-problem {
+	position: static !important;
+	box-sizing: content-box;
+}
+
+.reply-body {
+	padding: 4px 15px 34px;
+	background: rgb(247, 248, 250);
+}
+
+.reply-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.reply-list li {
+	margin-top: 0;
+	border-top: 0;
+	padding-top: 10px;
+}
+
+.one-reply a {
+	text-decoration: none;
+	float: left;
+	padding: 1px;
+}
+
+.one-reply a img {
+	width: 32px;
+	height: 32px;
+	border-radius: 16px;
+}
+
+.one-reply-body {
+	margin-left: 45px;
+	zoom: 1;
+	word-wrap: break-word;
+	word-break: break-all;
+}
+
+.reply-user {
+	text-decoration: none;
+	color: #2d64b3;
+}
+
+.reply-content {
+	line-height: 20px;
+	font-size: 14px;
+	word-wrap: break-word;
+	word-break: break-all;
+	color: #333;
+}
+
+.one-reply-body-b {
+	font-size: 12px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #333;
+	line-height: 22px;
+	text-align: right;
+}
+
+.one-reply-body-b a {
+	float: right;
+	color: #666;
+	padding-left: 5px;
+	text-decoration: none;
+}
+
+.my-reply {
+	padding-top: 13px;
+}
+
+.my-replyword {
+	resize: none;
+	padding: 6px 10px;
+	margin-left: 40px;
+	width: 93%;
+}
+
+.my-reply input {
+	float: right;
+}
+
+#modify-intro,
+#modify-readme {
+	padding-top: 5%;
+}
+
+#modify-intro-body,
+#modify-readme-body {
+	width: 640px;
+}
+
+.uk-modal-footer {
+	height: 30px;
+}
+
+#modify-intro textarea,
+#modify-readme textarea {
+	font-family: "微软雅黑";
+	line-height: 24px;
+	text-indent: 20px;
+	padding: 10px 15px;
+	min-height: 250px;
+	resize: none;
+	width: 570px;
+}
+
+.uk-progress {
+	height: 45px !important;
+}

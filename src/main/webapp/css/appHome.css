@@ -1,0 +1,215 @@
+html {
+  overflow-y: scroll;
+}
+
+:root {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+:root body {
+  position: absolute;
+}
+body{
+	width: 100vw;
+	padding:0;
+	min-height: 100%;
+}
+
+
+.navStyle{
+	position: absolute;
+	top:0;
+	left:0;
+	height:150px;
+	transition:top 0.3s;
+}
+.navFixed{
+	position:fixed;
+	left:0;
+	top:0;
+}
+.navHidden{
+	top:-150px;
+}
+.navShow{
+	top:0;
+	z-index:1;
+}
+#navBar{
+	background-color: rgb(0,168,230);
+	height: 150px;
+}
+#searchIcon{
+	position: relative;
+	color:white;
+	font-size: 50px;
+	padding: 50px;
+	z-index: 2;
+}
+#sortIcon{
+	float: right;
+	color:white;
+	font-size: 50px;
+	padding: 50px;
+	transition-duration: 0.5s;
+	-moz-transition-duration: 0.5s; /* Firefox 4 */
+	-webkit-transition-duration: 0.5s; /* Safari 和 Chrome */
+	-o-transition-duration: 0.5s; /* Opera */
+}
+.rotate{
+	transform:rotate(90deg);
+	-ms-transform:rotate(90deg); 	/* IE 9 */
+	-moz-transform:rotate(90deg); 	/* Firefox */
+	-webkit-transform:rotate(90deg); /* Safari 和 Chrome */
+	-o-transform:rotate(90deg); 	/* Opera */
+}
+.titleName{
+	color: white;
+	margin-top: 60px;
+	font-size: 50px;
+}
+
+.dropdownStyle{
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+	padding-right: 0 !important;
+}
+#gridFilter{
+	margin-right: 0 !important;
+}
+#gridFilter li{
+	margin:0;
+	background-color: rgb(0,168,230);
+	color:white;
+	padding: 0;
+}
+#gridFilter li a{
+	font-size: 50px;
+	background-color: rgb(0,168,230);
+	color:white;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	padding-left: 20px;
+	padding-right: 0;
+}
+#gridFilter a:hover{
+	background-color: white;
+	color: rgb(0,168,230);
+}
+#gridFilter i{
+	position: relative;
+	top: -6px;
+	font-size: 30px;
+	margin-left: 40px;
+	margin-right: 40px;
+}
+.filterColor0{
+	color:rgb(0,0,0);
+}
+.filterColor1{
+	color:rgb(255,60,115);
+}
+.filterColor2{
+	color:rgb(15,250,75);
+}
+.filterColor3{
+	color:rgb(60,255,255);
+}
+.filterColor4{
+	color:rgb(255,255,0);
+}
+.filterColor5{
+	color:rgb(180,0,255);
+}
+
+#searchBar{
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 150px;
+	background-color: white;
+	z-index: 2;
+	display: none;
+}
+#searchForm{
+	height:150px;
+}
+#searchInput{
+	width:100%;
+	height:150px;
+	font-size: 50px;
+}
+#searchButton{
+	position: relative;
+	top:-150px;
+	float: right;
+	padding: 50px;
+	font-size: 50px;
+	background-color: white;
+	color:rgb(200,200,200);
+	border-left: 2px solid rgb(200,200,200);
+	border-right: 2px solid rgb(200,200,200);
+}
+#searchMargin{
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0.5);
+	z-index: 1;
+	display: none;
+}
+#mainBox{
+	margin:0;
+	width: 100%;
+	background-color: rgb(235,235,235);
+}
+.toolBox{
+	width:94%;
+	height:380px;
+	margin-left: 3%;
+	background-color: white;
+	margin-top: 30px;
+	border-radius: 20px;
+}
+
+.first{
+	margin-top: 40px;
+	height:60px;
+}
+.first i{
+	position: relative;
+	top:-6px;
+	font-size: 30px;
+}
+.first .toolName{
+	font-size: 50px;
+	line-height: 50px;
+}
+.first .toolSize{
+	font-size: 35px;
+	color:rgb(190,190,190);
+}
+.toolBriefIntro{
+	text-indent:2em;
+	width:90%;
+	margin-left: 5%;
+	height:150px;
+	font-size: 45px;
+	line-height: 50px;
+	color:rgb(160,160,160);
+}
+.third{
+	height:80px;
+	margin-top: 30px;
+	font-size: 40px;
+	line-height: 40px;
+}
+#bottomBar{
+	width:100%;
+	height: 100px;
+	background-color: rgb(235,235,235);
+	font-size: 40px;
+	line-height: 40px;
+	padding-top: 50px;
+}

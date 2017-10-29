@@ -1,0 +1,240 @@
+#searchNav{
+	margin-top: 60px;
+	height: 120px; /*62*/
+	background-color: white;
+	border-bottom: 1px solid #ececec;
+	-webkit-transition: 0.3s;
+    transition: 0.3s ease-out;
+}
+#searchNav ul{
+	padding: 0;
+	margin: 0;
+}
+#searchNav li{
+	list-style: none;
+	display: inline-block;
+	margin-top: 20px;
+	padding-bottom: 20px;
+}
+#searchNav li a{
+	font-size: 16px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: rgb(68,68,68);
+	padding-left: 50px;
+	padding-right: 50px;
+}
+#searchNav li a:hover{
+	color: rgb(3,102,214);
+	text-decoration: none;
+}
+#searchNav div{
+	position: absolute;
+	width: 132px;
+	height: 2px;
+	background-color: rgb(18,65,145);
+	display: inline-block;
+	-webkit-transition: 0.3s;
+    transition: 0.3s ease-out;
+}
+
+#searchForm{
+	border:1px solid #dfdfdf;
+	border-radius: 5px;
+	background-color: rgb(245,245,245);
+	width: 400px !important;
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+.uk-search:before{
+	left: 370px;
+	border-left: 1.5px solid #dfdfdf;
+	border-bottom-left-radius: 5px;
+	border-top-left-radius: 5px;
+	cursor: pointer;
+}
+#searchInput{
+	width: 400px !important;
+	padding: 0 30px 0 10px;
+}
+.searchButton{
+	position: absolute;
+	width: 31.5px;
+	height: 30px;
+	border: 1.5px;
+	border-radius: 5px;
+	top: 0px;
+	left: 370px;
+	background-color: rgba(0,0,0,0);
+	outline: none;
+	box-shadow: none;
+	cursor: pointer;
+}
+#searchAll,#searchUser,#advancedSearch{
+	padding-bottom: 23px !important;
+}
+#searchBox{
+	background-color: white;
+	padding-bottom: 80px;
+}
+#searchBox li{
+	 list-style: none;
+}
+
+.searchAllSum{
+	margin-top: 20px;
+	color: rgb(153,153,153);
+	font-size: 12px;
+	display: inline-block;
+}
+.searchMethod{
+	margin-top: 15px;
+	float: right;
+	font-size: 12px;
+	height: 30px;
+}
+
+.firstBox{
+	height: 40px;
+}
+.toolIcon{
+	font-size: 18px;
+	color: rgb(0,168,230);
+}
+.toolName{
+	font-size: 20px;
+	font-weight: 500;
+	color: rgb(0,168,230);
+}
+.toolName:hover{
+	color:rgb(0,140,200);
+}
+.toolLabel{
+	border: 1px solid rgb(249,242,244);
+	border-radius: 8px;
+	padding-top:4px;
+	padding-bottom: 4px;
+	padding-left: 5px;
+	padding-right: 5px;
+	color: rgb(199,37,78);
+	background-color: rgb(249,242,244);
+	font-size: 12px;
+	cursor: default;
+}
+.hiddenSecondBox{
+	width:200px;
+	height: 20px;
+}
+.secondBox{
+	height: 20px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	font-size: 12px;
+}
+.secondBox2{
+	width:250px;
+	height: 20px;
+	display: inline-block;
+	float: right;
+}
+.bottomBlock{
+	float: right;
+	margin-left: 2%;
+}
+.bottomBlock .sum{
+	font-size: 12px;
+}
+.thirdBox{
+	height: 110px;
+}
+.toolIntrodution{
+	text-indent:2em;
+	color: rgb(153,153,153);
+}
+.toolPostRevision{
+	color: rgb(153,153,153);
+}
+.toolMoreVision{
+	color:rgb(0,168,230);
+}
+.toolMoreVision:hover{
+	color:rgb(0,140,200);
+}
+
+#searchUserSum{
+	margin-top: 20px;
+	color: rgb(153,153,153);
+	font-size: 12px;
+	display: inline-block;
+}
+.searchUserBox{
+	height: 200px;
+	border-bottom: 1px solid rgb(221,221,221);
+}
+.searchUserIcon{
+	float: left;
+	position: relative;
+	top:25px;
+	width: 60px;
+	height: 60px;
+	border-radius: 30px;
+	overflow: hidden;
+	display: inline-block;
+}
+.searchUserIntro{
+	position: relative;
+	top:25px;
+	display: inline-block;
+	float: left;
+	margin-left: 15px;
+}
+.searchUserName{
+	font-size: 14px;
+	font-weight: 500;
+	color: rgb(0,168,230);
+}
+.searchUserName:hover{
+	color:rgb(0,140,200);
+}
+.searchUserSex{
+	color: rgb(0,168,230);
+}
+.searchUserDepart,.searchUserJob{
+	font-size: 12px;
+}
+.searchUserIntroduction{
+	margin: 0;
+	text-indent:2em;
+	color: rgb(153,153,153);
+}
+
+
+.advancedSearchForm label{
+	width: 30% !important;
+}
+.uk-form-controls input,select{
+	border-radius: 3px !important;
+	-webkit-box-shadow: 2px 2px 2px rgb(240,240,240) inset;
+	-moz-box-shadow: 2px 2px 2px rgb(240,240,240) inset;
+	box-shadow: 2px 2px 2px rgb(240,240,240) inset;
+}
+#divice{
+	color:rgb(190,190,190);
+	display: inline-block;
+	user-select: none;
+	cursor: default;
+}
+.submitButton{
+	background-color: rgb(0,168,230);
+	color: white !important;
+	border: 1px solid rgb(0,168,230);
+	border-radius: 3px !important;
+	transition:all 218ms cubic-bezier(.42,0,.58,1);
+}
+.submitButton:hover{
+	background-color: white;
+	color: rgb(0,168,230) !important;
+}
+.highlight {
+  color: rgb(204,0,0);
+}

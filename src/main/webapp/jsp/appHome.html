@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>诺基亚工具管理平台</title>
+	<link rel="stylesheet" type="text/css" href="../css/appHome.css">
+	<link rel="stylesheet" type="text/css" href="../uikit/css/uikit.min.css">
+	<link rel="stylesheet" type="text/css" href="../uikit/css/components/search.css">
+
+	<script src="../uikit/js/components/search.js"></script>
+	<script type="text/javascript" src="../uikit/jquery.min.js"></script>
+	<script type="text/javascript" src="../uikit/js/uikit.min.js"></script>
+	<script type="text/javascript" src="../uikit/js/components/grid.js"></script>
+	<script src="../js/clamp.min.js"></script>
+</head>
+<body>
+	<div class="uk-width-1-1" style="height:150px;background-color: rgb(235,235,235);"></div>
+	<div class="uk-container-center uk-width-1-1 navStyle">
+        <nav id="navBar" class="uk-navbar">
+            <ul class="uk-navbar-nav">
+                <li class="uk-parent" data-uk-dropdown>
+                    <i id="sortIcon" class="uk-icon-bars"></i>
+                    <div class="uk-dropdown uk-dropdown-navbar dropdownStyle">
+                        <ul id="gridFilter" class="uk-nav uk-nav-navbar uk-nav-side uk-list uk-list-striped uk-list-line">
+							<li data-uk-filter=""><a href=""><i class="uk-icon-circle filterColor0"></i>全部</a></li>
+							<li data-uk-filter="filter-1"><a href=""><i class="uk-icon-circle filterColor1"></i>办公</a></li>
+							<li data-uk-filter="filter-2"><a href=""><i class="uk-icon-circle filterColor2"></i>网络</a></li>
+							<li data-uk-filter="filter-3"><a href=""><i class="uk-icon-circle filterColor3"></i>安全</a></li>
+							<li data-uk-filter="filter-4"><a href=""><i class="uk-icon-circle filterColor4"></i>系统维护</a></li>
+							<li data-uk-filter="filter-5"><a href=""><i class="uk-icon-circle filterColor5"></i>其他</a></li>
+						</ul>
+                    </div>
+                </li>
+            </ul>
+            <ul class="uk-navbar-nav uk-navbar-flip">
+                <li class="uk-active"><i id="searchIcon" class="uk-icon-search"></i></li>
+            </ul>
+            <div class="uk-navbar-content uk-navbar-center titleName">诺基亚工具管理系统</div>
+        </nav>
+	</div>
+	
+	<div id="searchBar" class="uk-width-1-1">
+		<form id="searchForm" class="uk-width-1-1">
+			<input id="searchInput" class="uk-search-field" type="text" placeholder="Search Tools You Like..." onkeypress="if(event.keyCode == 13){dropSearchButtonClick();return false;}">
+            <i id="searchButton" class="uk-icon-search"></i>
+		</form>
+	</div>
+	<div id="searchMargin" class="uk-width-1-1 uk-height-1-1"></div>
+
+	<div id="mainBox" class="uk-container" data-uk-grid="{controls:'#gridFilter'}">
+		<div class="toolBox" data-uk-filter="filter-1" onclick="$(window).attr('location','appDetail.html');">
+			<div class="first">
+				<i class="uk-icon-circle uk-margin-large-left uk-margin-right filterColor1"></i>
+				<span class="toolName">OllyDbg</span>
+				<span class="uk-margin-left toolSize">(233.33MB)</span>
+			</div>
+			<div class="uk-margin-top toolBriefIntro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+			<div class="third">
+				<span style="position: relative;left:10%;"><i class="uk-margin-right uk-icon-thumbs-o-up"></i><span class="zanSUM">3</span></span>
+				<span style="position: relative;left:30%;"><i class="uk-margin-right uk-icon-comment-o"></i><span class="commentSum">6</span></span>
+				<span style="position: relative;left:50%;"><i class="uk-margin-right uk-icon-download"></i><span class="downloadSum">0</span></span>
+			</div>
+		</div>
+		<div class="toolBox" data-uk-filter="filter-2">
+			<div class="first">
+				<i class="uk-icon-circle uk-margin-large-left uk-margin-right filterColor2"></i>
+				<span class="toolName">网络流量监测器</span>
+				<span class="uk-margin-left toolSize">(233.33MB)</span>
+			</div>
+			<div class="uk-margin-top toolBriefIntro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+			<div class="third">
+				<span style="position: relative;left:10%;"><i class="uk-margin-right uk-icon-thumbs-o-up"></i><span class="zanSUM">1</span></span>
+				<span style="position: relative;left:30%;"><i class="uk-margin-right uk-icon-comment-o"></i><span class="commentSum">1</span></span>
+				<span style="position: relative;left:50%;"><i class="uk-margin-right uk-icon-download"></i><span class="downloadSum">2</span></span>
+			</div>
+		</div>
+		<div class="toolBox" data-uk-filter="filter-1">
+			<div class="first">
+				<i class="uk-icon-circle uk-margin-large-left uk-margin-right filterColor1"></i>
+				<span class="toolName">TraceMe</span>
+				<span class="uk-margin-left toolSize">(233.33MB)</span>
+			</div>
+			<div class="uk-margin-top toolBriefIntro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+			<div class="third">
+				<span style="position: relative;left:10%;"><i class="uk-margin-right uk-icon-thumbs-o-up"></i><span class="zanSUM">0</span></span>
+				<span style="position: relative;left:30%;"><i class="uk-margin-right uk-icon-comment-o"></i><span class="commentSum">2</span></span>
+				<span style="position: relative;left:50%;"><i class="uk-margin-right uk-icon-download"></i><span class="downloadSum">0</span></span>
+			</div>
+		</div>
+		<div class="toolBox" data-uk-filter="filter-5">
+			<div class="first">
+				<i class="uk-icon-circle uk-margin-large-left uk-margin-right filterColor5"></i>
+				<span class="toolName">Advanced Codecs</span>
+				<span class="uk-margin-left toolSize">(233.33MB)</span>
+			</div>
+			<div class="uk-margin-top toolBriefIntro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+			<div class="third">
+				<span style="position: relative;left:10%;"><i class="uk-margin-right uk-icon-thumbs-o-up"></i><span class="zanSUM">3</span></span>
+				<span style="position: relative;left:30%;"><i class="uk-margin-right uk-icon-comment-o"></i><span class="commentSum">1</span></span>
+				<span style="position: relative;left:50%;"><i class="uk-margin-right uk-icon-download"></i><span class="downloadSum">3</span></span>
+			</div>
+		</div>
+		<div class="toolBox" data-uk-filter="filter-2">
+			<div class="first">
+				<i class="uk-icon-circle uk-margin-large-left uk-margin-right filterColor2"></i>
+				<span class="toolName">DreamScene</span>
+				<span class="uk-margin-left toolSize">(233.33MB)</span>
+			</div>
+			<div class="uk-margin-top toolBriefIntro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+			<div class="third">
+				<span style="position: relative;left:10%;"><i class="uk-margin-right uk-icon-thumbs-o-up"></i><span class="zanSUM">1</span></span>
+				<span style="position: relative;left:30%;"><i class="uk-margin-right uk-icon-comment-o"></i><span class="commentSum">0</span></span>
+				<span style="position: relative;left:50%;"><i class="uk-margin-right uk-icon-download"></i><span class="downloadSum">0</span></span>
+			</div>
+		</div>
+		<div class="toolBox" data-uk-filter="filter-3">
+			<div class="first">
+				<i class="uk-icon-circle uk-margin-large-left uk-margin-right filterColor3"></i>
+				<span class="toolName">汇编金手指</span>
+				<span class="uk-margin-left toolSize">(233.33MB)</span>
+			</div>
+			<div class="uk-margin-top toolBriefIntro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+			<div class="third">
+				<span style="position: relative;left:10%;"><i class="uk-margin-right uk-icon-thumbs-o-up"></i><span class="zanSUM">3</span></span>
+				<span style="position: relative;left:30%;"><i class="uk-margin-right uk-icon-comment-o"></i><span class="commentSum">2</span></span>
+				<span style="position: relative;left:50%;"><i class="uk-margin-right uk-icon-download"></i><span class="downloadSum">3</span></span>
+			</div>
+		</div>
+		<div class="toolBox" data-uk-filter="filter-5">
+			<div class="first">
+				<i class="uk-icon-circle uk-margin-large-left uk-margin-right filterColor5"></i>
+				<span class="toolName">microKMS</span>
+				<span class="uk-margin-left toolSize">(233.33MB)</span>
+			</div>
+			<div class="uk-margin-top toolBriefIntro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+			<div class="third">
+				<span style="position: relative;left:10%;"><i class="uk-margin-right uk-icon-thumbs-o-up"></i><span class="zanSUM">1</span></span>
+				<span style="position: relative;left:30%;"><i class="uk-margin-right uk-icon-comment-o"></i><span class="commentSum">1</span></span>
+				<span style="position: relative;left:50%;"><i class="uk-margin-right uk-icon-download"></i><span class="downloadSum">1</span></span>
+			</div>
+		</div>
+		<div class="toolBox" data-uk-filter="filter-4">
+			<div class="first">
+				<i class="uk-icon-circle uk-margin-large-left uk-margin-right filterColor4"></i>
+				<span class="toolName">devcpp</span>
+				<span class="uk-margin-left toolSize">(233.33MB)</span>
+			</div>
+			<div class="uk-margin-top toolBriefIntro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+			<div class="third">
+				<span style="position: relative;left:10%;"><i class="uk-margin-right uk-icon-thumbs-o-up"></i><span class="zanSUM">0</span></span>
+				<span style="position: relative;left:30%;"><i class="uk-margin-right uk-icon-comment-o"></i><span class="commentSum">0</span></span>
+				<span style="position: relative;left:50%;"><i class="uk-margin-right uk-icon-download"></i><span class="downloadSum">0</span></span>
+			</div>
+		</div>
+		<div class="toolBox" data-uk-filter="filter-1">
+			<div class="first">
+				<i class="uk-icon-circle uk-margin-large-left uk-margin-right filterColor1"></i>
+				<span class="toolName">SublimeText3</span>
+				<span class="uk-margin-left toolSize">(233.33MB)</span>
+			</div>
+			<div class="uk-margin-top toolBriefIntro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+			<div class="third">
+				<span style="position: relative;left:10%;"><i class="uk-margin-right uk-icon-thumbs-o-up"></i><span class="zanSUM">2</span></span>
+				<span style="position: relative;left:30%;"><i class="uk-margin-right uk-icon-comment-o"></i><span class="commentSum">5</span></span>
+				<span style="position: relative;left:50%;"><i class="uk-margin-right uk-icon-download"></i><span class="downloadSum">0</span></span>
+			</div>
+		</div>
+		<div class="toolBox" data-uk-filter="filter-5">
+			<div class="first">
+				<i class="uk-icon-circle uk-margin-large-left uk-margin-right filterColor5"></i>
+				<span class="toolName">好压</span>
+				<span class="uk-margin-left toolSize">(233.33MB)</span>
+			</div>
+			<div class="uk-margin-top toolBriefIntro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+			<div class="third">
+				<span style="position: relative;left:10%;"><i class="uk-margin-right uk-icon-thumbs-o-up"></i><span class="zanSUM">1</span></span>
+				<span style="position: relative;left:30%;"><i class="uk-margin-right uk-icon-comment-o"></i><span class="commentSum">0</span></span>
+				<span style="position: relative;left:50%;"><i class="uk-margin-right uk-icon-download"></i><span class="downloadSum">2</span></span>
+			</div>
+		</div>
+		<div class="toolBox" data-uk-filter="filter-4">
+			<div class="first">
+				<i class="uk-icon-circle uk-margin-large-left uk-margin-right filterColor4"></i>
+				<span class="toolName">美图秀秀</span>
+				<span class="uk-margin-left toolSize">(233.33MB)</span>
+			</div>
+			<div class="uk-margin-top toolBriefIntro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+			<div class="third">
+				<span style="position: relative;left:10%;"><i class="uk-margin-right uk-icon-thumbs-o-up"></i><span class="zanSUM">3</span></span>
+				<span style="position: relative;left:30%;"><i class="uk-margin-right uk-icon-comment-o"></i><span class="commentSum">3</span></span>
+				<span style="position: relative;left:50%;"><i class="uk-margin-right uk-icon-download"></i><span class="downloadSum">0</span></span>
+			</div>
+		</div>
+		<div class="toolBox" data-uk-filter="filter-3">
+			<div class="first">
+				<i class="uk-icon-circle uk-margin-large-left uk-margin-right filterColor3"></i>
+				<span class="toolName">YY语音</span>
+				<span class="uk-margin-left toolSize">(233.33MB)</span>
+			</div>
+			<div class="uk-margin-top toolBriefIntro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+			<div class="third">
+				<span style="position: relative;left:10%;"><i class="uk-margin-right uk-icon-thumbs-o-up"></i><span class="zanSUM">0</span></span>
+				<span style="position: relative;left:30%;"><i class="uk-margin-right uk-icon-comment-o"></i><span class="commentSum">0</span></span>
+				<span style="position: relative;left:50%;"><i class="uk-margin-right uk-icon-download"></i><span class="downloadSum">0</span></span>
+			</div>
+		</div>
+		<div class="toolBox" data-uk-filter="filter-5">
+			<div class="first">
+				<i class="uk-icon-circle uk-margin-large-left uk-margin-right filterColor5"></i>
+				<span class="toolName">电脑管家</span>
+				<span class="uk-margin-left toolSize">(233.33MB)</span>
+			</div>
+			<div class="uk-margin-top toolBriefIntro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+			<div class="third">
+				<span style="position: relative;left:10%;"><i class="uk-margin-right uk-icon-thumbs-o-up"></i><span class="zanSUM">0</span></span>
+				<span style="position: relative;left:30%;"><i class="uk-margin-right uk-icon-comment-o"></i><span class="commentSum">0</span></span>
+				<span style="position: relative;left:50%;"><i class="uk-margin-right uk-icon-download"></i><span class="downloadSum">0</span></span>
+			</div>
+		</div>
+		<div class="toolBox" data-uk-filter="filter-3">
+			<div class="first">
+				<i class="uk-icon-circle uk-margin-large-left uk-margin-right filterColor3"></i>
+				<span class="toolName">净网专家</span>
+				<span class="uk-margin-left toolSize">(233.33MB)</span>
+			</div>
+			<div class="uk-margin-top toolBriefIntro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+			<div class="third">
+				<span style="position: relative;left:10%;"><i class="uk-margin-right uk-icon-thumbs-o-up"></i><span class="zanSUM">1</span></span>
+				<span style="position: relative;left:30%;"><i class="uk-margin-right uk-icon-comment-o"></i><span class="commentSum">5</span></span>
+				<span style="position: relative;left:50%;"><i class="uk-margin-right uk-icon-download"></i><span class="downloadSum">0</span></span>
+			</div>
+		</div>
+		<div class="toolBox" data-uk-filter="filter-4">
+			<div class="first">
+				<i class="uk-icon-circle uk-margin-large-left uk-margin-right filterColor4"></i>
+				<span class="toolName">工具2</span>
+				<span class="uk-margin-left toolSize">(233.33MB)</span>
+			</div>
+			<div class="uk-margin-top toolBriefIntro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+			<div class="third">
+				<span style="position: relative;left:10%;"><i class="uk-margin-right uk-icon-thumbs-o-up"></i><span class="zanSUM">2</span></span>
+				<span style="position: relative;left:30%;"><i class="uk-margin-right uk-icon-comment-o"></i><span class="commentSum">2</span></span>
+				<span style="position: relative;left:50%;"><i class="uk-margin-right uk-icon-download"></i><span class="downloadSum">0</span></span>
+			</div>
+		</div>
+		<div class="toolBox" data-uk-filter="filter-2">
+			<div class="first">
+				<i class="uk-icon-circle uk-margin-large-left uk-margin-right filterColor2"></i>
+				<span class="toolName">github离线版</span>
+				<span class="uk-margin-left toolSize">(233.33MB)</span>
+			</div>
+			<div class="uk-margin-top toolBriefIntro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+			<div class="third">
+				<span style="position: relative;left:10%;"><i class="uk-margin-right uk-icon-thumbs-o-up"></i><span class="zanSUM">0</span></span>
+				<span style="position: relative;left:30%;"><i class="uk-margin-right uk-icon-comment-o"></i><span class="commentSum">0</span></span>
+				<span style="position: relative;left:50%;"><i class="uk-margin-right uk-icon-download"></i><span class="downloadSum">2</span></span>
+			</div>
+		</div>
+		<div class="toolBox" data-uk-filter="filter-5">
+			<div class="first">
+				<i class="uk-icon-circle uk-margin-large-left uk-margin-right filterColor5"></i>
+				<span class="toolName">TraceMe</span>
+				<span class="uk-margin-left toolSize">(233.33MB)</span>
+			</div>
+			<div class="uk-margin-top toolBriefIntro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+			<div class="third">
+				<span style="position: relative;left:10%;"><i class="uk-margin-right uk-icon-thumbs-o-up"></i><span class="zanSUM">0</span></span>
+				<span style="position: relative;left:30%;"><i class="uk-margin-right uk-icon-comment-o"></i><span class="commentSum">1</span></span>
+				<span style="position: relative;left:50%;"><i class="uk-margin-right uk-icon-download"></i><span class="downloadSum">0</span></span>
+			</div>
+		</div>
+		<div class="toolBox" data-uk-filter="filter-4">
+			<div class="first">
+				<i class="uk-icon-circle uk-margin-large-left uk-margin-right filterColor4"></i>
+				<span class="toolName">汇编金手指</span>
+				<span class="uk-margin-left toolSize">(233.33MB)</span>
+			</div>
+			<div class="uk-margin-top toolBriefIntro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+			<div class="third">
+				<span style="position: relative;left:10%;"><i class="uk-margin-right uk-icon-thumbs-o-up"></i><span class="zanSUM">0</span></span>
+				<span style="position: relative;left:30%;"><i class="uk-margin-right uk-icon-comment-o"></i><span class="commentSum">0</span></span>
+				<span style="position: relative;left:50%;"><i class="uk-margin-right uk-icon-download"></i><span class="downloadSum">0</span></span>
+			</div>
+		</div>
+		<div class="toolBox" data-uk-filter="filter-2">
+			<div class="first">
+				<i class="uk-icon-circle uk-margin-large-left uk-margin-right filterColor2"></i>
+				<span class="toolName">microKMS</span>
+				<span class="uk-margin-left toolSize">(233.33MB)</span>
+			</div>
+			<div class="uk-margin-top toolBriefIntro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+			<div class="third">
+				<span style="position: relative;left:10%;"><i class="uk-margin-right uk-icon-thumbs-o-up"></i><span class="zanSUM">0</span></span>
+				<span style="position: relative;left:30%;"><i class="uk-margin-right uk-icon-comment-o"></i><span class="commentSum">1</span></span>
+				<span style="position: relative;left:50%;"><i class="uk-margin-right uk-icon-download"></i><span class="downloadSum">1</span></span>
+			</div>
+		</div>
+		<div class="toolBox" data-uk-filter="filter-5">
+			<div class="first">
+				<i class="uk-icon-circle uk-margin-large-left uk-margin-right filterColor5"></i>
+				<span class="toolName">devcpp</span>
+				<span class="uk-margin-left toolSize">(233.33MB)</span>
+			</div>
+			<div class="uk-margin-top toolBriefIntro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+			<div class="third">
+				<span style="position: relative;left:10%;"><i class="uk-margin-right uk-icon-thumbs-o-up"></i><span class="zanSUM">3</span></span>
+				<span style="position: relative;left:30%;"><i class="uk-margin-right uk-icon-comment-o"></i><span class="commentSum">0</span></span>
+				<span style="position: relative;left:50%;"><i class="uk-margin-right uk-icon-download"></i><span class="downloadSum">0</span></span>
+			</div>
+		</div>
+		<div class="toolBox" data-uk-filter="filter-4">
+			<div class="first">
+				<i class="uk-icon-circle uk-margin-large-left uk-margin-right filterColor4"></i>
+				<span class="toolName">好压</span>
+				<span class="uk-margin-left toolSize">(233.33MB)</span>
+			</div>
+			<div class="uk-margin-top toolBriefIntro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+			<div class="third">
+				<span style="position: relative;left:10%;"><i class="uk-margin-right uk-icon-thumbs-o-up"></i><span class="zanSUM">0</span></span>
+				<span style="position: relative;left:30%;"><i class="uk-margin-right uk-icon-comment-o"></i><span class="commentSum">0</span></span>
+				<span style="position: relative;left:50%;"><i class="uk-margin-right uk-icon-download"></i><span class="downloadSum">1</span></span>
+			</div>
+		</div>
+		<div class="toolBox" data-uk-filter="filter-2">
+			<div class="first">
+				<i class="uk-icon-circle uk-margin-large-left uk-margin-right filterColor2"></i>
+				<span class="toolName">YY语音</span>
+				<span class="uk-margin-left toolSize">(233.33MB)</span>
+			</div>
+			<div class="uk-margin-top toolBriefIntro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+			<div class="third">
+				<span style="position: relative;left:10%;"><i class="uk-margin-right uk-icon-thumbs-o-up"></i><span class="zanSUM">0</span></span>
+				<span style="position: relative;left:30%;"><i class="uk-margin-right uk-icon-comment-o"></i><span class="commentSum">0</span></span>
+				<span style="position: relative;left:50%;"><i class="uk-margin-right uk-icon-download"></i><span class="downloadSum">3</span></span>
+			</div>
+		</div>
+		<div class="toolBox" data-uk-filter="filter-1">
+			<div class="first">
+				<i class="uk-icon-circle uk-margin-large-left uk-margin-right filterColor1"></i>
+				<span class="toolName">电脑管家</span>
+				<span class="uk-margin-left toolSize">(233.33MB)</span>
+			</div>
+			<div class="uk-margin-top toolBriefIntro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+			<div class="third">
+				<span style="position: relative;left:10%;"><i class="uk-margin-right uk-icon-thumbs-o-up"></i><span class="zanSUM">0</span></span>
+				<span style="position: relative;left:30%;"><i class="uk-margin-right uk-icon-comment-o"></i><span class="commentSum">1</span></span>
+				<span style="position: relative;left:50%;"><i class="uk-margin-right uk-icon-download"></i><span class="downloadSum">1</span></span>
+			</div>
+		</div>
+		<div class="toolBox" data-uk-filter="filter-5">
+			<div class="first">
+				<i class="uk-icon-circle uk-margin-large-left uk-margin-right filterColor5"></i>
+				<span class="toolName">净网专家</span>
+				<span class="uk-margin-left toolSize">(233.33MB)</span>
+			</div>
+			<div class="uk-margin-top toolBriefIntro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+			<div class="third">
+				<span style="position: relative;left:10%;"><i class="uk-margin-right uk-icon-thumbs-o-up"></i><span class="zanSUM">0</span></span>
+				<span style="position: relative;left:30%;"><i class="uk-margin-right uk-icon-comment-o"></i><span class="commentSum">2</span></span>
+				<span style="position: relative;left:50%;"><i class="uk-margin-right uk-icon-download"></i><span class="downloadSum">0</span></span>
+			</div>
+		</div>
+		<div class="toolBox" data-uk-filter="filter-4">
+			<div class="first">
+				<i class="uk-icon-circle uk-margin-large-left uk-margin-right filterColor4"></i>
+				<span class="toolName">OllyDbg</span>
+				<span class="uk-margin-left toolSize">(233.33MB)</span>
+			</div>
+			<div class="uk-margin-top toolBriefIntro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+			<div class="third">
+				<span style="position: relative;left:10%;"><i class="uk-margin-right uk-icon-thumbs-o-up"></i><span class="zanSUM">2</span></span>
+				<span style="position: relative;left:30%;"><i class="uk-margin-right uk-icon-comment-o"></i><span class="commentSum">0</span></span>
+				<span style="position: relative;left:50%;"><i class="uk-margin-right uk-icon-download"></i><span class="downloadSum">0</span></span>
+			</div>
+		</div>
+		<div class="toolBox" data-uk-filter="filter-2">
+			<div class="first">
+				<i class="uk-icon-circle uk-margin-large-left uk-margin-right filterColor2"></i>
+				<span class="toolName">devcpp</span>
+				<span class="uk-margin-left toolSize">(233.33MB)</span>
+			</div>
+			<div class="uk-margin-top toolBriefIntro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+		</div>
+		<div class="toolBox" data-uk-filter="filter-1">
+			<div class="first">
+				<i class="uk-icon-circle uk-margin-large-left uk-margin-right filterColor1"></i>
+				<span class="toolName">网络流量监测器</span>
+				<span class="uk-margin-left toolSize">(233.33MB)</span>
+			</div>
+			<div class="uk-margin-top toolBriefIntro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+		</div>
+		<div class="toolBox" data-uk-filter="filter-5">
+			<div class="first">
+				<i class="uk-icon-circle uk-margin-large-left uk-margin-right filterColor5"></i>
+				<span class="toolName">OllyDbg</span>
+				<span class="uk-margin-left toolSize">(233.33MB)</span>
+			</div>
+			<div class="uk-margin-top toolBriefIntro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+			<div class="third">
+				<span style="position: relative;left:10%;"><i class="uk-margin-right uk-icon-thumbs-o-up"></i><span class="zanSUM">0</span></span>
+				<span style="position: relative;left:30%;"><i class="uk-margin-right uk-icon-comment-o"></i><span class="commentSum">0</span></span>
+				<span style="position: relative;left:50%;"><i class="uk-margin-right uk-icon-download"></i><span class="downloadSum">0</span></span>
+			</div>
+		</div>
+		<div class="toolBox" data-uk-filter="filter-4">
+			<div class="first">
+				<i class="uk-icon-circle uk-margin-large-left uk-margin-right filterColor4"></i>
+				<span class="toolName">OllyDbg</span>
+				<span class="uk-margin-left toolSize">(233.33MB)</span>
+			</div>
+			<div class="uk-margin-top toolBriefIntro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+		</div>
+		<div class="toolBox" data-uk-filter="filter-1">
+			<div class="first">
+				<i class="uk-icon-circle uk-margin-large-left uk-margin-right filterColor1"></i>
+				<span class="toolName">OllyDbg</span>
+				<span class="uk-margin-left toolSize">(233.33MB)</span>
+			</div>
+			<div class="uk-margin-top toolBriefIntro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+		</div>
+		<div class="toolBox" data-uk-filter="filter-4">
+			<div class="first">
+				<i class="uk-icon-circle uk-margin-large-left uk-margin-right filterColor4"></i>
+				<span class="toolName">OllyDbg</span>
+				<span class="uk-margin-left toolSize">(233.33MB)</span>
+			</div>
+			<div class="uk-margin-top toolBriefIntro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+		</div>
+		<div class="toolBox" data-uk-filter="filter-5">
+			<div class="first">
+				<i class="uk-icon-circle uk-margin-large-left uk-margin-right filterColor5"></i>
+				<span class="toolName">OllyDbg</span>
+				<span class="uk-margin-left toolSize">(233.33MB)</span>
+			</div>
+			<div class="uk-margin-top toolBriefIntro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+		</div>
+		<div class="toolBox" data-uk-filter="filter-3">
+			<div class="first">
+				<i class="uk-icon-circle uk-margin-large-left uk-margin-right filterColor3"></i>
+				<span class="toolName">OllyDbg</span>
+				<span class="uk-margin-left toolSize">(233.33MB)</span>
+			</div>
+			<div class="uk-margin-top toolBriefIntro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+		</div>
+		<div class="toolBox" data-uk-filter="filter-1">
+			<div class="first">
+				<i class="uk-icon-circle uk-margin-large-left uk-margin-right filterColor1"></i>
+				<span class="toolName">OllyDbg</span>
+				<span class="uk-margin-left toolSize">(233.33MB)</span>
+			</div>
+			<div class="uk-margin-top toolBriefIntro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+		</div>
+		<div class="toolBox" data-uk-filter="filter-5">
+			<div class="first">
+				<i class="uk-icon-circle uk-margin-large-left uk-margin-right filterColor5"></i>
+				<span class="toolName">OllyDbg</span>
+				<span class="uk-margin-left toolSize">(233.33MB)</span>
+			</div>
+			<div class="uk-margin-top toolBriefIntro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+		</div>
+		<div class="toolBox" data-uk-filter="filter-3">
+			<div class="first">
+				<i class="uk-icon-circle uk-margin-large-left uk-margin-right filterColor3"></i>
+				<span class="toolName">OllyDbg</span>
+				<span class="uk-margin-left toolSize">(233.33MB)</span>
+			</div>
+			<div class="uk-margin-top toolBriefIntro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+		</div>
+		<div class="toolBox" data-uk-filter="filter-4">
+			<div class="first">
+				<i class="uk-icon-circle uk-margin-large-left uk-margin-right filterColor4"></i>
+				<span class="toolName">OllyDbg</span>
+				<span class="uk-margin-left toolSize">(233.33MB)</span>
+			</div>
+			<div class="uk-margin-top toolBriefIntro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+		</div>
+	</div>
+	<div id="bottomBar"><center>再怎么下拉也没有啦......</center></div>
+
+	<script type="text/javascript" src="../js/appHome.js"></script>
+</body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>详情页</title>
+		<link rel="stylesheet" type="text/css" href="../css/appDetail.css">
+		<link rel="stylesheet" type="text/css" href="../uikit/css/uikit.min.css">
+		<link rel="stylesheet" type="text/css" href="../uikit/css/components/search.css">
+
+		<script src="../uikit/js/components/search.js"></script>
+		<script type="text/javascript" src="../uikit/jquery.min.js"></script>
+		<script type="text/javascript" src="../uikit/js/uikit.min.js"></script>
+		<script type="text/javascript" src="../uikit/js/components/grid.js"></script>
+		<script src="../js/clamp.min.js"></script>
+	</head>
+
+	<body>
+		<div class="uk-container-center uk-width-1-1 navStyle">
+			<nav id="navBar" class="uk-navbar">
+				<ul class="uk-navbar-nav">
+					<li class="uk-active"><i id="backIcon" class="uk-icon-angle-left"></i></li>
+				</ul>
+				<ul class="uk-navbar-nav uk-navbar-flip">
+					<li class="uk-active"><i id="searchIcon" class="uk-icon-search"></i></li>
+				</ul>
+				<div class="uk-navbar-content uk-navbar-center titleName">工具详情</div>
+			</nav>
+		</div>
+
+		<div id="searchBar" class="uk-width-1-1">
+			<form id="searchForm" class="uk-width-1-1">
+				<input id="searchInput" class="uk-search-field" type="text" placeholder="Search Tools You Like..." onkeypress="if(event.keyCode == 13){dropSearchButtonClick();return false;}">
+				<i id="searchButton" class="uk-icon-search"></i>
+			</form>
+		</div>
+		<div id="searchMargin" class="uk-width-1-1 uk-height-1-1"></div>
+
+		<div id="detail" class="uk-container">
+			<div class="firstBox">
+				<div style="margin-top: 30px;">
+					<span class="toolName">OllyDbg</span>
+					<span class="uk-margin-left toolSize">(233.33MB)</span>
+					<span class="uk-icon-star-o" style="font-size: 50px;margin-left: 20px;color: orangered;float: right;"></span>
+					<span class="uk-icon-share-alt"style="font-size: 50px;float: right;"></span>
+				</div>
+				<div style="margin-top: 40px;">
+					<span class="tag">分类：</span><span class="toolType">网络安全</span>
+					<span class="tag">发布者：</span><span class="uploadName">BillChen</span>
+					<span class="tag">版本：</span><span class="toolVersion">V2.3.3</span>
+				</div>
+				<div style="margin-top: 60px;">
+					<span class="tag">标签：</span>
+					<span class="uk-margin-left toolLabel">极致体验</span>
+					<span class="uk-margin-left toolLabel">纵向丝滑</span>
+					<span class="uk-margin-left toolLabel">心动心动</span>
+				</div>
+			</div>
+			<div class="secondBox">
+				<div class="tag" style="margin-top: 30px;">历史版本：</div>
+				<div class="preVersion">
+					<div class="preToolVersion">V2.3.0</div>
+					<div class="preSize">大小：</div>
+					<div class="preToolSize">23.33MB</div>
+					<div class="preTime">发布日期：</div>
+					<div class="preUploadTime">2003-03-03</div>
+				</div>
+				<div class="preVersion">
+					<span class="preToolVersion">V2.2.3</span>
+					<span class="preSize">大小：</span>
+					<span class="preToolSize">22.33MB</span>
+					<span class="preTime">发布日期：</span>
+					<span class="preUploadTime">2003-02-03</span>
+				</div>
+				<div class="preVersion">
+					<span class="preToolVersion">V2.2.0</span>
+					<span class="preSize">大小：</span>
+					<span class="preToolSize">22.23MB</span>
+					<span class="preTime">发布日期：</span>
+					<span class="preUploadTime">2003-02-01</span>
+				</div>
+				<div class="preVersion">
+					<span class="preToolVersion">V1.2.3</span>
+					<span class="preSize">大小：</span>
+					<span class="preToolSize">2.33MB</span>
+					<span class="preTime">发布日期：</span>
+					<span class="preUploadTime">2003-01-30</span>
+				</div>
+				<center>
+					<div class="moreVersion">点击展开更多</div>
+				</center>
+			</div>
+			<div class="thirdBox">
+				<ul id="control" class="uk-tab" data-uk-tab="{connect:'#controled'}">
+					<li>
+						<a href="">详情</a>
+					</li>
+					<li>
+						<a href="">评论</a>
+					</li>
+					<li>
+						<a href="">提问</a>
+					</li>
+				</ul>
+				<ul id="controled" class="uk-switcher uk-margin">
+					<li>
+						<div class="tag" style="margin-top: 30px;">工具简介：</div>
+						<p class="briefIntro">OllyDbg是一个新的动态追踪工具，将IDA与SoftICE结合起来的思想，Ring 3级调试器，非常容易上手，己代替SoftICE成为当今最为流行的调试解密工具了。同时还支持插件扩展功能，是目前最强大的调试工具。</p>
+						<div class="tag" style="margin-top: 30px;">自述文档：</div>
+						<p class="details">OllyDbg 可以以在任何采用奔腾处理器的 Windows 95、98、ME、NT 或是 XP（未经完全测试）操作系统中工作，但我们强烈建议您采用300-MHz以上的奔腾处理器以达到最佳效果。还有，OllyDbg 是极占内存的，因此如果您需要使用诸如追踪调试[Trace]之类的扩展功能话，建议您最好使用128MB以上的内存。</p>
+					</li>
+					<li>
+						<ul class="uk-comment-list">
+							<li class="one-comment">
+								<div class="one-comment-l">
+									<a href="#"><img src="../img/headIcon.jpg" alt="head" /></a>
+								</div>
+								<div class="one-comment-r">
+									<div class="one-comment-r-t">
+										<a href="#">BillChen</a>
+									</div>
+									<p>这个工具真好用！</p>
+									<div class="one-comment-r-b"><span>时间：</span><span class="comment-time">2017-05-05 21：20</span></div>
+								</div>
+							</li>
+							<li class="one-comment">
+								<div class="one-comment-l">
+									<a href="#"><img src="../img/headIcon.jpg" alt="head" /></a>
+								</div>
+								<div class="one-comment-r">
+									<div class="one-comment-r-t">
+										<a href="#">LLLLLi</a>
+									</div>
+									<p>工匠精神！用起来十分好。</p>
+									<div class="one-comment-r-b"><span>时间：</span><span class="comment-time">2017-05-04 22：20</span></div>
+								</div>
+							</li>
+							<li class="one-comment">
+								<div class="one-comment-l">
+									<a href="#"><img src="../img/headIcon.jpg" alt="head" /></a>
+								</div>
+								<div class="one-comment-r">
+									<div class="one-comment-r-t">
+										<a href="#">ACLin</a>
+									</div>
+									<p>为我们的友谊干杯！</p>
+									<div class="one-comment-r-b"><span>时间：</span><span class="comment-time">2017-05-04 22：19</span></div>
+								</div>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<ul class="problem-list">
+							<li class="one-problem" data-uk-filter="resolvepro">
+								<div class="one-problem-l">
+									<a href="#"><img src="../img/headIcon.jpg" alt="head" /></a>
+								</div>
+								<div class="one-problem-r">
+									<div class="one-problem-r-t">
+										<a href="#">BillChen</a>
+									</div>
+									<p>这个工具应该怎么用？</p>
+									<div class="one-problem-r-b">
+										<span>时间：</span>
+										<span class="problem-time">2017-05-04 22：19</span>
+										<a href="javascript:void(0)" style="text-decoration: none;" data-uk-toggle="{target:'#reply-body-1'}">回答(<span class="reply-num">1</span>)</a>
+									</div>
+								</div>
+								<div class="reply-body uk-hidden" id="reply-body-1">
+									<ul class="reply-list">
+										<li class="one-reply" style="padding-right: 250px;">
+											<a href="#"><img src="../img/headIcon.jpg" /></a>
+											<div class="one-reply-body">
+												<a href="#" class="reply-user">hhhh</a>:
+												<span class="reply-content">安装上用就好了！</span>
+												<div class="one-reply-body-b">
+													<span class="reply-time">2017-05-04 22：20</span>
+													<a href="#">回复</a>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</li>
+
+				</ul>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="../js/appDetail.js"></script>
+	</body>
+
+</html>

@@ -1,0 +1,423 @@
+html {
+  overflow-y: scroll;
+}
+
+:root {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+:root body {
+  position: absolute;
+}
+body{
+	width: 100vw;
+	padding:0;
+	background-color: rgb(230,230,230);
+	min-height: 100%;
+}
+#navBar{
+	background-color: rgb(0,168,230);
+	height: 150px;
+}
+#backIcon{
+	color:white;
+	font-size: 70px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	padding-left: 60px;
+	padding-right: 60px;
+}
+#searchIcon{
+	position: relative;
+	color:white;
+	font-size: 50px;
+	padding: 50px;
+	z-index: 2;
+}
+.titleName{
+	color: white;
+	margin-top: 60px;
+	font-size: 50px;
+}
+#searchBar{
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 150px;
+	background-color: white;
+	z-index: 2;
+	display: none;
+}
+#searchForm{
+	height:150px;
+}
+#searchInput{
+	width:100%;
+	height:150px;
+	font-size: 50px;
+}
+#searchButton{
+	position: relative;
+	top:-150px;
+	float: right;
+	padding: 50px;
+	font-size: 50px;
+	background-color: white;
+	color:rgb(200,200,200);
+	border-left: 2px solid rgb(200,200,200);
+	border-right: 2px solid rgb(200,200,200);
+}
+#searchMargin{
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0.5);
+	z-index: 1;
+	display: none;
+}
+
+#detail{
+	width:94%;
+	margin-top: 3%;
+	margin-left: 3%;
+	background-color: white;
+	border-radius: 20px;
+}
+.firstBox{
+	width:100%;
+	height: 280px;
+	border-bottom: 5px solid rgb(230,230,230);
+}
+.toolName{
+	font-size: 50px;
+	line-height: 50px;
+}
+.toolSize{
+	font-size: 38px;
+	line-height: 38px;
+	color:rgb(160,160,160);
+}
+.tag{
+	font-size: 38px;
+	line-height: 38px;
+	color:rgb(160,160,160);
+}
+.toolType{
+	margin-right: 30px;
+	font-size: 38px;
+	line-height: 38px;
+	color:rgb(160,160,160);
+}
+.uploadName{
+	margin-right: 30px;
+	font-size: 38px;
+	line-height: 38px;
+	color:rgb(160,160,160);
+}
+.toolVersion{
+	font-size: 38px;
+	line-height: 38px;
+	color:rgb(160,160,160);
+}
+.toolLabel{
+	border: 5px solid rgb(249,242,244);
+	border-radius: 20px;
+	padding-top:15px;
+	padding-bottom: 15px;
+	padding-left: 25px;
+	padding-right: 25px;
+	color: rgb(199,37,78);
+	background-color: rgb(249,242,244);
+	font-size: 38px;
+	line-height: 38px;
+}
+.secondBox{
+	width:100%;
+	border-bottom: 5px solid rgb(230,230,230);
+}
+.preVersion{
+	margin-top: 30px;
+	width: 94%;
+	height: 100px;
+	margin-left: 3%;
+	background-color: rgb(255,255,225);
+	border-radius: 20px;
+	border: 5px solid rgb(255,255,200);
+}
+.preVersion:hover{
+	background-color: rgb(222,247,221);
+}
+.preToolVersion{
+	width: 20%;
+	height: 60px;
+	padding-top: 40px;
+	margin-left: 30px;
+	font-size: 30px;
+	line-height: 30px;
+	display: inline-block;
+}
+.preSize{
+	width: 12%;
+	height: 60px;
+	padding-top: 40px;
+	font-size: 30px;
+	line-height: 30px;
+	display: inline-block;
+}
+.preToolSize{
+	width: 20%;
+	height: 60px;
+	padding-top: 40px;
+	font-size: 30px;
+	line-height: 30px;
+	display: inline-block;
+}
+.preTime{
+	width: 20%;
+	height: 60px;
+	padding-top: 40px;
+	font-size: 30px;
+	line-height: 30px;
+	display: inline-block;
+}
+.preUploadTime{
+	width: 20%;
+	height: 60px;
+	padding-top: 40px;
+	font-size: 30px;
+	line-height: 30px;
+	display: inline-block;
+}
+.moreVersion{
+	font-size: 35px;
+	line-height: 35px;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+.thirdBox{
+	margin-top: 30px;
+	width:100%;
+}
+#control{
+	font-size: 45px;
+	line-height: 45px;
+}
+#control a{
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+#controled{
+	font-size: 45px;
+	line-height: 45px;
+}
+.briefIntro{
+	text-indent:2em;
+	font-size: 38px;
+	margin-top: 20px;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	border-bottom: 5px solid rgb(255,255,200);
+	padding-bottom: 30px;
+	color:rgb(185,185,185);
+}
+.details{
+	text-indent:2em;
+	font-size: 38px;
+	margin-top: 20px;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	padding-bottom: 30px;
+	color:rgb(185,185,185);
+	
+}
+
+
+.one-comment,
+.one-problem {
+	border-bottom: 1px solid #d9dde1;
+	overflow: hidden;
+	padding: 24px 0 16px 24px;
+}
+
+.one-comment-l,
+.one-problem-l {
+	float: left;
+	width: 120px;
+	margin-right: 10px;
+}
+
+.one-comment-l a,
+.one-problem-l a {
+	text-decoration: none;
+}
+
+.one-comment-l a img,
+.one-problem-l a img {
+	height: 120px;
+	width: 120px;
+	border-radius: 60px;
+}
+
+.one-comment-r,
+.one-problem-r {
+	margin-left: 10px;
+	margin-right: 20px;
+	float: left;
+}
+
+.one-comment-r-t,
+.one-problem-r-t {
+	line-height: 1.2;
+	margin-bottom: 8px;
+}
+
+.one-comment-r-t a,
+.one-problem-r-t a {
+	font-size: 42px;
+	color: #4d555d;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.one-comment-r p,
+.one-problem-r p {
+	margin-top: 3px;
+	font-size: 42px;
+	line-height: 50px;
+	color: #303538;
+	word-break: break-all;
+	word-wrap: break-word;
+}
+
+.one-comment-r-b,
+.one-problem-r-b {
+	color: #93999f;
+	font-size: 36px;
+	margin-top: 15px;
+}
+
+.comment-page,
+.problem-page {
+	margin-top: 40px!important;
+}
+.problem-type {
+	height: 48px;
+	background-color: #f3f5f7;
+	position: relative;
+}
+
+#problem-typeul {
+	list-style: none;
+}
+
+.problem-type li a {
+	line-height: 26px;
+	color: gray;
+}
+
+.uk-subnav>.uk-active>* {
+	color: black !important;
+}
+
+.problem-list li {
+	padding: 24px 0 16px 24px;
+}
+
+.problem-list {
+	position: static !important;
+	height: auto !important;
+}
+
+.one-problem {
+	position: static !important;
+	box-sizing: content-box;
+}
+
+.reply-body {
+	float: left;
+	padding: 4px 15px 34px;
+	background: rgb(247, 248, 250);
+}
+
+.reply-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.reply-list li {
+	margin-top: 0;
+	border-top: 0;
+	padding-top: 10px;
+}
+.one-reply {
+	padding-right: 250px;
+}
+.one-reply a {
+	font-size: 36px;
+	text-decoration: none;
+	float: left;
+	padding: 1px;
+}
+
+.one-reply a img {
+	width: 80px;
+	height: 80px;
+	border-radius: 40px;
+}
+
+.one-reply-body {
+	width: 100%;
+	margin-left: 45px;
+	zoom: 1;
+	word-wrap: break-word;
+	word-break: break-all;
+}
+
+.reply-user {
+	text-decoration: none;
+	color: #2d64b3;
+}
+
+.reply-content {
+	line-height: 50px;
+	font-size: 40px;
+	word-wrap: break-word;
+	word-break: break-all;
+	color: #333;
+}
+
+.one-reply-body-b {
+	font-size: 34px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #333;
+	line-height: 40px;
+}
+
+.one-reply-body-b a {
+	float: right;
+	color: #666;
+	padding-left: 5px;
+	text-decoration: none;
+}
+
+.my-reply {
+	padding-top: 13px;
+}
+
+.my-replyword {
+	resize: none;
+	padding: 6px 10px;
+	margin-left: 40px;
+	width: 93%;
+}
+
+.my-reply input {
+	float: right;
+}
+.reply-time {
+	font-size: 34px;
+}
